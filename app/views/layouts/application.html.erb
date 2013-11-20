@@ -19,10 +19,10 @@
           <nav>
             <ul>
               <li class="navigation">
-              	<a href="#">About</a>
+              	<%= link_to "About", '#' %>
               </li>
               <li class="navigation">
-              	<a href="#">Portfolio</a>
+              	<%= link_to "Portfolio", '#' %>
               </li>
             </ul>
           </nav><!--end nav-->
@@ -33,8 +33,12 @@
         <div id="right-nav">
           <nav>
             <ul>
-              <li class="navigation"><a href="#">News</a></li>
-              <li class="navigation"><a href="#">Contact</a></li>
+              <li class="navigation">
+              	<%= link_to "News", posts_path %>
+              </li>
+              <li class="navigation">
+              	<%= link_to "Contact", '#' %>
+              </li>
             </ul>
           </nav>
         </div><!--end right nav-->
