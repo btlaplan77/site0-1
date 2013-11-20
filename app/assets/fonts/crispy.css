@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'crispy';
+    src: url('crispy.eot');
+    src: url('crispy.eot') format('embedded-opentype'),
+         url('crispy.woff') format('woff'),
+         url('crispy.ttf') format('truetype'),
+         url('crispy.svg#AndikaBasicRegular') format('svg');
+}

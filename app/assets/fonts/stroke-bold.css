@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'StrokeBold';
+    src: url('stroke-bold.eot');
+    src: url('stroke-bold.eot') format('embedded-opentype'),
+         url('stroke-bold.woff') format('woff'),
+         url('stroke-bold.ttf') format('truetype'),
+         url('stroke-bold.svg#StrokeBold') format('svg');
+}

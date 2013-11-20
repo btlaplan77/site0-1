@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+	<!-- enable responsive web design -->
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
+    <title><%= content_for?(:title) ? yield(:title) : "Twenty Two Labs | Custom Web Development" %></title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <!-- modernize old browsers -->
+    <%= javascript_include_tag :modernizr %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+	<header>
+      <div id="header-container">
+        <div id="left-nav">
+          <nav>
+            <ul>
+              <li class="navigation">
+              	<a href="#">About</a>
+              </li>
+              <li class="navigation">
+              	<a href="#">Portfolio</a>
+              </li>
+            </ul>
+          </nav><!--end nav-->
+        </div><!--end left nav-->
+        <div id="logo">
+          <%= link_to image_tag('logo.png'), root_url %>
+        </div><!--end logo-->
+        <div id="right-nav">
+          <nav>
+            <ul>
+              <li class="navigation"><a href="#">News</a></li>
+              <li class="navigation"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div><!--end right nav-->
+      </div><!--end header-container-->
+    </header>
+    <div id="up-down">
+      <%= image_tag('updown.png') %>
+    </div>
+
+  	<div class="container">
+  	  <%= yield %>
+  	</div>
+
+  	<!-- Javascripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    
+  </body>
+</html>
