@@ -1,2 +1,15 @@
-<%= image_tag('vial.png', id: "vial") %>
-<h1>This would be blog page</h1><br>
+<div>
+	<%= image_tag('vial.png', id: "vial") %>
+	<h1>News about 22labs</h1><br />
+	<%= link_to "new blog post", new_post_path %>
+</div>
+<br /><br /><br /><br /><br />
+<div id="blogposts">
+	<% @posts.each do |p| %><br />
+		<div id="post_<%= p.id %>">
+			<h3><%= p.title %><br /></h4>
+			<p><%= p.body %></p>
+			<p>posted: <%= p.created_at.strftime("%d %b. %Y") %></p>
+		</div>
+	<% end %>
+</div>

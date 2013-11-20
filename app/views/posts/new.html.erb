@@ -1,0 +1,7 @@
+<%= image_tag('vial.png', id: "vial") %>
+<h1>News about 22labs</h1><br>
+<%= simple_form_for @post do |p| %>
+	<%= p.input :title %>
+	<%= p.input :body %>
+	<%= p.submit %>
+<% end %>
